@@ -1,6 +1,41 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<script type="text/javascript">
+<!--
+var message="Правая кнопка мыши отключена!";
+function click(e) {
+   if (document.all) {    // IE
+      if (event.button == 2) {    // Чтобы отключить левую кнопку поставьте цифру 1
+          alert(message);    // чтобы отключить среднюю кнопку поставьте цифру 1
+          return false;}
+      }
+   if (document.layers) { // NC
+      if (e.which == 3) {
+          alert(message);
+          return false;}
+      }
+}
+if (document.layers)
+   {document.captureEvents(Event.MOUSEDOWN);}
+document.onmousedown=click;
+document.oncontextmenu=function(e){return false};
+//-->
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+}
+</script>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Kantovka</title>
@@ -8,7 +43,8 @@
 </head>
 
 <body>
+	<audio src="music.mp3" controls="autoplay"></audio
 	  </style>
 </div> </div>
         <div id="content_container">
-       	  <div id="header"> <div class="header_content_mainline"> El Paso Seddemetia  </div> <h4> Видели данного пейсара на улице? Бейте его ногами. </h4>
+       	  <div id="header"> <div class="header_content_mainline"> El Paso Seddementia  </div> <h3> Видели данного пейсара на улице? Бейте его ногами  </h3>
