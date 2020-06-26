@@ -8,10 +8,31 @@
 body {
 	margin:0px;
 	padding:0px;
-	background-attachment: scroll;
 	background-color: 0000;
 	background-repeat: repeat-x;
 	background-position: left top;
+}
+img.rot {
+  animation: 1s linear 0s normal none infinite running rot;
+  -webkit-animation: 1s linear 0s normal none infinite running rot;
+  width: 90px;
+	padding:12px;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #content_container {
