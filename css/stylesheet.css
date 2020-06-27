@@ -22,7 +22,7 @@ body {
 
 /* Add some content at the bottom of the video/page */
 .overlay {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     position: absolute;
     top:0;
     left:0;
