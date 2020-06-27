@@ -12,6 +12,25 @@ body {
 	background-repeat: repeat-x;
 	background-position: left top;
 }
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #7a7a7a;
+    width: 100%;
+    padding: 500px;
+}
+
+
 img.rot {
   animation: 1s linear 0s normal none infinite running rot;
   -webkit-animation: 1s linear 0s normal none infinite running rot;
